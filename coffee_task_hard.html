@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Размен суммы</title>
+</head>
+<body>
+    <p name="formulation">Разменять сумму купюрами 500, 100, 10 и монетами по 2 руб., если это возможно.</p>
+    <form action="https://www.bing.com/search?" id="CurrencyExchange" name="CurrencyExchange" target="_blank">
+        <ul>
+            <li>Для поисковика: <input name="q" value="search"></li>
+            <li>Формулировка задачи
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Разменять сумму купюрами 500, 100, 10 и монетами по 2 руб., если это возможно.</textarea>
+            </li>
+            <li>Сумма (в рублях): <input id="amount" name="amount" type="number" value="4442"></li>
+            <li>Результат размена: <input id="result" name="result" value="не определен" readonly></li>
+            <li>действие 1: <input id="verify" type="button" value="Рассчитать"></li>
+            <li>действие 2: <input id="send" type="button" value="Отправить"></li>
+        </ul>
+    </form>
+
+    <script src="./js/coffee_task_hard.js"></script>
+</body>
+</html>
