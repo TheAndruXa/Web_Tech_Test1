@@ -21,14 +21,7 @@ function calculateChange() {
             remaining %= 2;
 
             if (remaining !== 0) {
-                result.innerHTML = `
-                    <p>Размен для суммы ${amount} руб:</p>
-                    <ul>
-                        <li>Купюры по 500 руб: ${count1000}</li>
-                        <li>Купюры по 100 руб: ${count200}</li>
-                        <li>Купюры по 10 руб: ${count10}</li>
-                        <li>Монетами по 2 рубля нельзя</li>
-                    </ul>
+                result.textContent = "Эту сумму невозможно разменять купюрами 500, 100, 10 и монетой 2 рубля.";
             } else {
                 result.innerHTML = `
                     <p>Размен для суммы ${amount} руб:</p>
